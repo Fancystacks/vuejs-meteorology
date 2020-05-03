@@ -6,11 +6,15 @@
           type="text"
           class="search-bar"
           placeholder="Search a location . . ."
+          v-model="query"
+          @keypress="fetchClimate"
         />
       </div>
-      <div class="climate-wrapper">
+      <div class="climate-wrapper" v-if="typeof weather.main != 'undefined'">
         <div class="location-box">
-          <div class="location">Denver, CO</div>
+          <div class="location">
+            {{ weather.name }}, {{ weather.sys.country }}
+          </div>
           <div class="date">Monday February 4th, 2020</div>
         </div>
         <div class="climate-box"></div>
@@ -27,7 +31,26 @@ export default {
   data() {
     return {
       api_key: "5650ba04d76cc8ddc64d65a07cda4c4a",
+      baseurl: "https://api.openweathermap.org/data/2.5/",
+      query: "",
+      weather: {},
     };
+  },
+  methods: {
+    fetchClimate(event) {
+      if (event.key == "Enter") {
+        fetch(
+          `${this.baseurl}weather?q=${this.query}&units=imperial&APPID=${this.api_key}`
+        )
+          .then((res) => {
+            return res.json();
+          })
+          .then(this.setResult);
+      }
+    },
+    setResult(result) {
+      this.weather = result;
+    },
   },
 };
 </script>
