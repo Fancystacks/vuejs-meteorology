@@ -52,6 +52,39 @@ export default {
     setResult(result) {
       this.weather = result;
     },
+    dateMaker() {
+      let d = new Date();
+      let months = [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ];
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ];
+
+      let day = days[d.getDay()];
+      let date = d.getDate();
+      let month = months[d.getMonth()];
+      let year = d.getFullYear();
+      // return wednesday, April 1st, 2020
+      return `${day} ${month} ${date}, ${year}`;
+    },
   },
 };
 </script>
@@ -122,7 +155,7 @@ main {
 
 .climate-wrapper .temp {
   display: inline-block;
-  padding: 15px 30px;
+  padding: 15px 20px;
   font-size: 110px;
   font-weight: 600;
   text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
@@ -140,6 +173,7 @@ main {
 .climate-wrapper .condition {
   font-size: 50px;
   color: white;
+  padding-bottom: 15px;
   opacity: 0.9;
   font-weight: 200;
   text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
