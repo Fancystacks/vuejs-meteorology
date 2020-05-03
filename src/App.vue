@@ -15,7 +15,7 @@
           <div class="location">
             {{ weather.name }}, {{ weather.sys.country }}
           </div>
-          <div class="date">Monday February 4th, 2020</div>
+          <div class="date">{{ dateMaker() }}</div>
         </div>
         <div class="climate-box"></div>
         <div class="temp">{{ Math.round(weather.main.temp) }}°F</div>
