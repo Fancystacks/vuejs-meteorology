@@ -18,8 +18,6 @@
 
       - Openweather Map data API
 
-      - Information is collected from a Mars Lander
+      - Current atmospheric conditions
 
-      - Geodesy and Heat Transport mission robot
-
-### This site was deployed on [GitHub Pages](https://fancystacks.github.io/interplanetary-climate/).
+### This site was deployed on [GitHub Pages](https://fancystacks.github.io/vuejs-meteorology/).
