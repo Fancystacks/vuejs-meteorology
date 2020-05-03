@@ -1,5 +1,10 @@
 <template>
-  <div id="app">
+  <div
+    id="app"
+    :class="
+      typeof weather.main != 'undefined' && weather.main.temp > 60 ? 'warm' : ''
+    "
+  >
     <main>
       <div class="search-box">
         <input
@@ -110,7 +115,7 @@ body {
 main {
   min-height: 100vh;
   padding: 25px;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5));
 }
 
 .search-box {
@@ -186,5 +191,9 @@ main {
   opacity: 0.8;
   font-weight: 50;
   text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
+}
+
+#app.warm {
+  background-image: url("https://user-images.githubusercontent.com/38336934/80924823-819e0500-8d48-11ea-9647-45f56b5f802e.jpg");
 }
 </style>
