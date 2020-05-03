@@ -46,4 +46,17 @@ main {
   padding: 25px;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6));
 }
+
+.search-box {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.search-bar {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 30px;
+  border: 2px;
+}
 </style>
