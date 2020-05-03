@@ -8,6 +8,16 @@
           placeholder="Search a location . . ."
         />
       </div>
+      <div class="climate-wrapper">
+        <div class="location-box">
+          <div class="location">Denver, CO</div>
+          <div class="date">Monday February 4th, 2020</div>
+        </div>
+        <div class="climate-box"></div>
+        <div class="temp">65°F</div>
+        <div class="condition">Rain</div>
+        <div class="high-low">43°F / 65°F</div>
+      </div>
     </main>
   </div>
 </template>
