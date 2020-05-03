@@ -1,4 +1,4 @@
-## Interplanetary Climate Application
+## VueJS Meteorology Report
 
 ### `vue CLI`
 
@@ -18,6 +18,6 @@
 
       - Openweather Map data API
 
-      - Current atmospheric conditions
+      - Current internationally available atmospheric conditions
 
 ### This site was deployed on [GitHub Pages](https://fancystacks.github.io/vuejs-meteorology/).
