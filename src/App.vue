@@ -78,10 +78,35 @@ main {
 
 .location-box .location {
   color: white;
-  font-size: 55px;
+  font-size: 58px;
   font-weight: 650;
   text-align: center;
-  text-shadow: 8px 10px rgba(0, 0, 0, 0.25);
+  text-shadow: 10px 16px 20px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat", san-serif;
+  margin-bottom: 15px;
+}
+
+.location-box .date {
+  color: white;
+  font-size: 28px;
+  font-weight: 150;
+  opacity: 0.4;
+  text-align: center;
+  text-shadow: 4px 6px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat", san-serif;
+}
+
+.climate-wrapper .temp {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 100px;
+  font-weight: 600;
+  text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
+}
+
+.climate-box,
+.climate-wrapper {
+  text-align: center;
+  color: white;
 }
 </style>
