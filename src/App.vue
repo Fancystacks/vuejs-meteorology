@@ -16,7 +16,6 @@
         <div class="climate-box"></div>
         <div class="temp">65°F</div>
         <div class="condition">Rain</div>
-        <div class="high-low">43°F / 65°F</div>
       </div>
     </main>
   </div>
@@ -75,5 +74,14 @@ main {
 
 .search-box .search-bar:focus {
   opacity: 0.8;
+}
+
+.location-box .location {
+  color: white;
+  font-size: 55px;
+  font-weight: 650;
+  text-align: center;
+  text-shadow: 8px 10px rgba(0, 0, 0, 0.25);
+  font-family: "Montserrat", san-serif;
 }
 </style>
