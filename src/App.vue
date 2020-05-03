@@ -18,8 +18,9 @@
           <div class="date">Monday February 4th, 2020</div>
         </div>
         <div class="climate-box"></div>
-        <div class="temp">65°F</div>
-        <div class="condition">Rain</div>
+        <div class="temp">{{ Math.round(weather.main.temp) }}°F</div>
+        <div class="humidity">{{ weather.main.humidity }}% Humidity</div>
+        <div class="condition">{{ weather.weather[0].main }}</div>
       </div>
     </main>
   </div>
@@ -139,7 +140,17 @@ main {
 .climate-wrapper .condition {
   font-size: 50px;
   color: white;
+  opacity: 0.9;
   font-weight: 200;
+  text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
+}
+
+.climate-wrapper .humidity {
+  font-size: 36px;
+  color: white;
+  margin: 15px;
+  opacity: 0.8;
+  font-weight: 50;
   text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
 }
 </style>
