@@ -57,7 +57,7 @@ main {
 }
 
 .search-box {
-  margin-bottom: 40px;
+  margin: 40px 0 60px 0;
   width: 100%;
 }
 
@@ -67,7 +67,7 @@ main {
   padding: 15px;
   opacity: 0.5;
   transition: 0.5s;
-  border-radius: 100px;
+  border-radius: 20px;
   box-shadow: 8 15px 8px -6px black;
   font-size: 30px;
 }
@@ -90,7 +90,7 @@ main {
   color: white;
   font-size: 28px;
   font-weight: 150;
-  opacity: 0.4;
+  opacity: 0.5;
   text-align: center;
   text-shadow: 4px 6px rgba(0, 0, 0, 0.25);
   font-family: "Montserrat", san-serif;
@@ -99,14 +99,24 @@ main {
 .climate-wrapper .temp {
   display: inline-block;
   padding: 15px 30px;
-  font-size: 100px;
+  font-size: 110px;
   font-weight: 600;
   text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
 }
 
-.climate-box,
 .climate-wrapper {
   text-align: center;
   color: white;
+  background-color: rgba(255, 255, 255, 0.25);
+  padding: 30px;
+  border-radius: 30px;
+  box-shadow: 9px 11px 24px rgba(0, 0, 0, 0.25);
+}
+
+.climate-wrapper .condition {
+  font-size: 50px;
+  color: white;
+  font-weight: 200;
+  text-shadow: 9px 11px 14px rgba(0, 0, 0, 0.25);
 }
 </style>
