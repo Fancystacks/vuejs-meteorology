@@ -57,12 +57,13 @@ main {
   width: 100%;
   padding: 15px;
   opacity: 0.5;
+  transition: 0.5s;
   border-radius: 100px;
   box-shadow: 8 15px 8px -6px black;
   font-size: 30px;
 }
 
 .search-box .search-bar:focus {
-  opacity: 0.9;
+  opacity: 0.8;
 }
 </style>
